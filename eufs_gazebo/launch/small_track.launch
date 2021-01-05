@@ -41,10 +41,4 @@
 
   <!-- start robot_control node -->
   <include file="$(find robot_control)/launch/robot_control.launch" />
-
-  <!-- Python script to republish ground truth -->
-  <node name="ground_truth_republisher" pkg="eufs_gazebo" type="ground_truth_republisher.py" output="screen" />
-
-  <!-- Launch map server -->
-  <!-- <node name="map_server" pkg="map_server" type="map_server" args="$(find eufs_description)/maps/map.yaml" output="screen" /> -->
 </launch>
