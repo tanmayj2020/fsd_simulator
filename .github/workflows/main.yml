@@ -6,7 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-20.04
     env:
-      CI_DESKTOP: "focal"
+      ROS_CI_DESKTOP: "focal"
       CI_SOURCE_PATH: $(pwd)
       ROSINSTALL_FILE: $CI_SOURCE_PATH/dependencies.rosinstall
       CATKIN_OPTIONS: $CI_SOURCE_PATH/catkin.options
